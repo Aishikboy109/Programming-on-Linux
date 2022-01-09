@@ -1,0 +1,25 @@
+# Nmap 7.92 scan initiated Sat Jan  8 19:36:01 2022 as: nmap -vv -sC -sV -oN nmap/initial 10.10.80.77
+Increasing send delay for 10.10.80.77 from 0 to 5 due to 61 out of 201 dropped probes since last increase.
+Nmap scan report for 10.10.80.77
+Host is up, received syn-ack (0.17s latency).
+Scanned at 2022-01-08 19:36:05 IST for 43s
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 8e:ec:2d:f9:1b:7b:34:0a:6a:43:8f:b3:c1:ed:79:37 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5pD7vdIS2Mi+a5rPHgRu8i8Cgm2hdBLRos502FQkeAySCj4DFEr7lBv2x8iJMdNnri4qwMBWDszVvMfm9pGh6HPHtMyeDKx+7zvuuialqlQ1jyrI4yypvcE+eWduLBKtiFcvKTPkEbS6GEwyfV0PyjMVJd8tZfoCIbhwowKR3NAwPkaBDF3FIoemS0NZRCCb/e0azOX+/PobLLY3AwCAjcXgafWbtGTxSdwfE0cNi0dpC1a3MQygc1/7B8pRJtoGW3bjs18WTJds8+W8heyaIu/7DibeBKWMLE6ULmbbvioBXgBO3LQeuNDZSx9PF3fPm1QCh2ALF8CdHclGnYYaP
+|   256 b8:a3:92:91:56:20:74:70:ab:05:eb:cc:59:4d:4b:22 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBB3v/2Rjgwvqtto6kje9B1g4+T3Ao4xvyzoYeaHt/Rlw10+NFvegfb6wJ9U02k2JT8diVpqcWTRy9PxjOgVIZTk=
+|   256 dc:06:27:aa:b9:83:6b:3b:04:4c:c7:3d:c6:4c:8c:ef (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGlQSFyBdoDkLo4A1uEDE0cQpIp655M+Bp2OUivDyB5T
+80/tcp open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+|_http-title: Rick is sup4r cool
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan  8 19:36:48 2022 -- 1 IP address (1 host up) scanned in 46.93 seconds
